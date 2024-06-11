@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet"  href="/css/logowanie.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+<div id="login">
+    <form name='form-login' th:action="@{/login}" method="post">
+        <span class="fontawesome-user"></span>
+        <input type="text" id="username" placeholder="Login" name="username">
+
+        <span class="fontawesome-lock"></span>
+        <input type="password" id="password" placeholder="Hasło" name="password">
+
+        <button type="submit">Zaloguj</button>
+
+    </form>
+</div>
+</body>
+</html>
